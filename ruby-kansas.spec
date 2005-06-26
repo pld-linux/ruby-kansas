@@ -19,7 +19,18 @@ Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Kansas is a software package that maps relational database tables to objects within the Ruby programming language. Kansas was originally written by Avi Bryant as what he calls a quick hack to play with object/relational mapping ideas. It was packaged as an extra within his old Iowa distribution.
+Kansas is a software package that maps relational database tables to
+objects within the Ruby programming language. Kansas was originally
+written by Avi Bryant as what he calls a quick hack to play with
+object/relational mapping ideas. It was packaged as an extra within
+his old Iowa distribution.
+
+%description -l pl
+Kansas to pakiet oprogramowania odwzorowuj±cy tabele relacyjnych baz
+danych na obiekty w jêzyku programowania Ruby. Kansas zosta³
+pierwotnie napisany przez Avi Bryanta jako (wg. autora) szybki hack do
+zabawy z pomys³ami odwzorowañ obiektowo-relacyjnych. By³ pakietowany
+jako dodatek w jego starej dystrybucji Iowa.
 
 %prep
 %setup -q -n kansas_%{version}
