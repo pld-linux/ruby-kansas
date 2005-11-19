@@ -1,6 +1,3 @@
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-%define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	Continuation-based web application framework
 Summary(pl):	Szkielet aplikacji WWW oparty na kontynuacji
 Name:		ruby-kansas
@@ -11,6 +8,7 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/1197/kansas_%{version}.tar.gz
 # Source0-md5:	247ed7f6cdd9e060cf07d55ebb57f81e
 URL:		http://enigo.com/projects/kansas
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb = 3.3.1
@@ -34,12 +32,11 @@ jako dodatek w jego starej dystrybucji Iowa.
 
 %prep
 %setup -q -n kansas_%{version}
-
-%build
 cp %{_datadir}/setup.rb .
 mkdir lib
 mv kansas* lib/
 
+%build
 ruby setup.rb config \
 	--rbdir=%{ruby_rubylibdir} \
 	--sodir=%{ruby_archdir}
