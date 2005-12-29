@@ -8,10 +8,10 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/1197/kansas_%{version}.tar.gz
 # Source0-md5:	247ed7f6cdd9e060cf07d55ebb57f81e
 URL:		http://enigo.com/projects/kansas
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb = 3.3.1
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
