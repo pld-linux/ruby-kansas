@@ -1,5 +1,5 @@
 Summary:	Continuation-based web application framework
-Summary(pl):	Szkielet aplikacji WWW oparty na kontynuacji
+Summary(pl.UTF-8):   Szkielet aplikacji WWW oparty na kontynuacji
 Name:		ruby-kansas
 Version:	0.2
 Release:	2
@@ -22,11 +22,11 @@ written by Avi Bryant as what he calls a quick hack to play with
 object/relational mapping ideas. It was packaged as an extra within
 his old Iowa distribution.
 
-%description -l pl
-Kansas to pakiet oprogramowania odwzorowuj±cy tabele relacyjnych baz
-danych na obiekty w jêzyku programowania Ruby. Kansas zosta³
+%description -l pl.UTF-8
+Kansas to pakiet oprogramowania odwzorowujÄ…cy tabele relacyjnych baz
+danych na obiekty w jÄ™zyku programowania Ruby. Kansas zostaÅ‚
 pierwotnie napisany przez Avi Bryanta jako (wg. autora) szybki hack do
-zabawy z pomys³ami odwzorowañ obiektowo-relacyjnych. By³ pakietowany
+zabawy z pomysÅ‚ami odwzorowaÅ„ obiektowo-relacyjnych. ByÅ‚ pakietowany
 jako dodatek w jego starej dystrybucji Iowa.
 
 %prep
